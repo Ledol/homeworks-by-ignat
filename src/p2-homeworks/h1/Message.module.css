@@ -1,0 +1,44 @@
+.message {
+    background-color: lightslategray ;
+    width: 400px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 20% 70% 10%;
+    grid-template-areas:
+                        'a m n'
+                        'a m t'
+                        'a m ti';
+}
+.titleMessage {
+    margin: 5px;
+    background-color: darkgreen;
+    border-radius: 10px 10px 10px 0px;
+    grid-area: m;
+}
+
+.avatar {
+    width: 60px;
+    border-radius: 100%;
+    grid-area: a;
+    margin: 8px;
+}
+
+.name {
+    color: darkmagenta;
+    font-size: 2em;
+    grid-area: n;
+    margin-left: 5px;
+
+}
+
+.text {
+    color: white;
+    grid-area: t;
+    margin-left: 5px;
+}
+
+.time {
+    color: burlywood ;
+    grid-area: ti;
+    text-align: center;
+}
