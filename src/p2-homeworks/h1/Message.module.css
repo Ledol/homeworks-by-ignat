@@ -11,8 +11,8 @@
 }
 .titleMessage {
     margin: 5px;
-    background-color: darkgreen;
-    border-radius: 10px 10px 10px 0px;
+    background-color: green;
+    border-radius: 10px 10px 10px 0;
     grid-area: m;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .name {
-    color: darkmagenta;
+    color: moccasin;
     font-size: 2em;
     grid-area: n;
     margin-left: 5px;
