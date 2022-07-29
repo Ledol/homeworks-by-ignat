@@ -11,9 +11,9 @@ type HW1PropsType = {
 function Message(props: HW1PropsType) {
     return (
         <div className={s.message}>
-            <img className={s.avatar} src={props.avatar} alt="avatar"/> {/*{props.avatar},*/}
+            <img className={s.avatar} src={props.avatar} alt="avatar"/>
 
-            <div></div>
+            <div className={s.angle}/>
             <div className={s.titleMessage}>
                 <div className={s.name}>{props.name}</div>
                 <div className={s.text}>{props.message}</div>

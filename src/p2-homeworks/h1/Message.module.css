@@ -1,44 +1,58 @@
 .message {
-    background-color: lightslategray ;
-    width: 400px;
-    display: grid;
+    /*background-color: lightslategray ;*/
+    /*width: 400px;*/
+    margin-left: 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-end;
+    /*display: grid;
     grid-template-columns: 20% 80%;
     grid-template-rows: 20% 70% 10%;
     grid-template-areas:
                         'a m n'
                         'a m t'
-                        'a m ti';
+                        'a m ti' ;*/
 }
 .titleMessage {
-    margin: 5px;
-    background-color: green;
+    padding: 5px;
+    background-color: rgba(0, 20, 0, 0.3);
     border-radius: 10px 10px 10px 0;
-    grid-area: m;
+    /*grid-area: m;*/
 }
 
 .avatar {
     width: 60px;
-    border-radius: 100%;
-    grid-area: a;
-    margin: 8px;
+    border-radius: 50%;
+    /*grid-area: a;*/
+    /*margin: 8px;*/
+}
+.angle {
+    width: 15px;
+    height: 15px;
+    background: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0) 15px, rgba(0, 20, 0, 0.3) 0);
+    /*grid-area: an;*/
 }
 
 .name {
     color: moccasin;
     font-size: 2em;
-    grid-area: n;
+    /*grid-area: n;*/
     margin-left: 5px;
 
 }
 
 .text {
     color: white;
-    grid-area: t;
+   /* grid-area: t;*/
     margin-left: 5px;
+    word-wrap: break-word;
+
 }
 
 .time {
     color: burlywood ;
-    grid-area: ti;
-    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    /*grid-area: ti;*/
+    /*text-align: center;*/
 }
