@@ -6,7 +6,7 @@ export type AffairPriorityType = 'high' | 'low' | 'middle' // need to fix any
 export type AffairType = {
     _id: number
     name: string
-    priority: string
+    priority: AffairPriorityType
 } // need to fix any
 export type FilterType = 'all' | AffairPriorityType
 
@@ -23,17 +23,15 @@ const defaultAffairs: Array<AffairType> = [ // need to fix any
 // pure helper functions
 export const filterAffairs = (affairs: Array<AffairType>, filter: FilterType): Array<AffairType> => { // need to fix any
     if (filter === 'all') return affairs
-    if (filter === 'high') return affairs.filter((a) => a.priority === filter )
-    if (filter === 'middle') return affairs.filter((a) => a.priority === filter )
-    if (filter === 'low') return affairs.filter((a) => a.priority === filter )
+    if (filter === 'high') return affairs.filter((a) => a.priority === filter)
+    if (filter === 'middle') return affairs.filter((a) => a.priority === filter)
+    if (filter === 'low') return affairs.filter((a) => a.priority === filter)
     return affairs   // need to fix
 }
 
 
-
-
 export const deleteAffair = (affairs: Array<AffairType>, _id: number): Array<AffairType> => { // need to fix any
-    return affairs.filter((aID) => aID._id !== _id ) // need to fix
+    return affairs.filter((aID) => aID._id !== _id) // need to fix
 }
 
 
@@ -47,15 +45,14 @@ function HW2() {
     return (
         <div>
             <hr/>
-            homeworks 2
-
+            <h3>homeworks 2</h3>
             {/*should work (должно работать)*/}
             <Affairs
                 data={filteredAffairs}
                 setFilter={setFilter}
                 deleteAffairCallback={deleteAffairCallback}
+                filter={filter}
             />
-
             <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeAffairs/>*/}

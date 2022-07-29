@@ -7,3 +7,30 @@
     color: white;
     font-weight: bold;
 }
+
+.btn {
+    width: 75px;
+    height: 25px;
+    background-color: forestgreen;
+    color: white;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+.btnDelete {
+    background-color: red;
+    font-size: 10px;
+    border-radius: 25%;
+    color: white;
+}
+
+.text {
+    padding-left: 20px;
+    font-size: 25px;
+    color: white;
+}
+
+.priority {
+    padding-left: 35px;
+    font-size: 25px;
+    color: moccasin;
+}
