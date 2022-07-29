@@ -1,0 +1,27 @@
+.link {
+    text-decoration-line: none;
+    color: white;
+    font-size: 20px;
+    margin: 5px;
+}
+.link:hover {
+    color: #e74c3c;
+}
+
+.menu {
+    width: 25px;
+    height: 25px;
+    background-color: greenyellow;
+    border-radius: 20%;
+
+}
+
+.header {
+    display: flex;
+    transform: translate(-250px);
+    transition-duration: 500ms;
+}
+.header:hover {
+    transform: translate(0);
+    transition-duration: 500ms;
+}

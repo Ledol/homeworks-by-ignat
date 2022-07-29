@@ -1,0 +1,16 @@
+.page404 {
+    width: 1600px;
+    height: 800px;
+    background-color: indianred;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.text404 {
+    font-size: 30px;
+    color: white;
+
+
+}
