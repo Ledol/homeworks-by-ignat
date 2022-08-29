@@ -1,0 +1,17 @@
+
+.textStyle {
+    color: white;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.imgStyle {
+    width: 25px;
+    height: 25px;
+}
+
+.btnStyle {
+    display: flex;
+
+
+}
