@@ -32,8 +32,8 @@ function Clock() {
         // close
     }
 
-    const stringTime: string = date.toLocaleTimeString() // fix with date
-    const stringDate: string = date.toLocaleDateString() // fix with date
+    const stringTime = date.toLocaleTimeString() || <br/> // fix with date
+    const stringDate = date.toLocaleDateString() || <br/>  // fix with date
 
     return (
         <div>
@@ -44,10 +44,12 @@ function Clock() {
                 {stringTime}
             </div>
 
-            {show && (
+            {show ? (
                 <div>
                     {stringDate}
                 </div>
+            ) : (
+                <br/>
             )}
 
             <SuperButton onClick={start}>start</SuperButton>

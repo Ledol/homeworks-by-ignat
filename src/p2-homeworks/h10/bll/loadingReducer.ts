@@ -20,4 +20,6 @@ export const loadingAC = (isLoading: boolean) => {
         type: 'CHANGE-LOADING',
         isLoading: isLoading
     }as const
-} // fix any
+}
+
+// fix any
